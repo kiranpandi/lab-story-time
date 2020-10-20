@@ -82,5 +82,9 @@ function aDifficultChoice(choice){
 //Seperate the strategies by a single space
 //Return the length of the complete strategy
 function consoleKaren(strategies){
-    console.log('strategies',strategies);
+    let stringConcat = "";
+    for(let i=0;i<strategies.length;i++){
+        stringConcat = stringConcat + strategies[i];
+    }
+    return stringConcat.length;
 }
